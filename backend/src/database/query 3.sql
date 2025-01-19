@@ -1,0 +1,12 @@
+TRUNCATE TABLE marca RESTART IDENTITY;
+TRUNCATE TABLE productos RESTART IDENTITY;
+
+select * from productos;
+
+TRUNCATE  marca  CASCADE;
+TRUNCATE  productos CASCADE;
+
+TRUNCATE TABLE marca, productos CASCADE;
+
+TRUNCATE TABLE marca, productos RESTART IDENTITY CASCADE;
+
